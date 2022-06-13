@@ -1,0 +1,12 @@
+@mixin buttonall($y,$x,$bg,$cl) {
+    padding: $y $x;
+    background: $bg;
+    color: $cl;
+    border-radius: 50px;
+    // transform: scale(0);
+}
+@mixin buttonhover($bg,$cl) {
+    background: $bg;
+    color: $cl;
+    // transform: scale(1);
+}
