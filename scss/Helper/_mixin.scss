@@ -10,3 +10,9 @@
     color: $cl;
     // transform: scale(1);
 }
+@mixin StyleText($cl,$fs,$fw) {
+    color: $cl;
+    font-size: $fs;
+    font-weight: $fw;
+    
+}

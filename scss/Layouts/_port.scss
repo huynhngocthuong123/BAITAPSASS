@@ -1,0 +1,66 @@
+.Port{
+    .port_send{
+        padding: 0 25px;
+        width: 345px;
+    }
+    .send_top{
+        .name{
+        }
+    }
+    .send_body{
+        select{
+            border: 1px solid rgba(102, 97, 97, 0.315);
+            border-radius: 44px;
+            width: 100%;
+            padding: 10px;
+            &:optional{
+                // color: $color-pink-1;
+                padding-left: 25px;
+            font-size: 12px;
+            }
+            &:focus{
+                outline: none;
+                border-color: rgba(0, 0, 0, 0.315);
+            }
+        }
+        a{
+            text-decoration: none;
+            font-size: 12px;
+
+        }
+    }
+
+    input{
+        font-size: 10px;
+        width: calc(100%/ 2 - 10px);        
+        padding: 10px 10px 10px 30px; 
+        border: 1px solid rgba(102, 97, 97, 0.315);
+        border-radius: 44px;
+        &:placeholder-shown{
+            padding-left: 30px;
+            font-size: 12px;
+        }
+        &:focus{
+            outline: none;
+            border-color: rgba(0, 0, 0, 0.315);
+        }
+        
+    }
+    textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid rgba(102, 97, 97, 0.315);
+        border-radius: 35px;
+        padding: 10px 10px 10px 30px; 
+        &:placeholder-shown{
+            padding-left: 30px;
+            font-size: 12px;
+        }
+        &:focus{
+            outline: none;
+            border-color: rgba(0, 0, 0, 0.315);
+        }
+    }
+    
+}

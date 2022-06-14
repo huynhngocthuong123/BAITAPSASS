@@ -1,27 +1,29 @@
-.About{
+.About {
     position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-top: 0;
-        left: 0;
-        background-image: url(../../img/Violet_top_left_wave.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: bottom;
-
+    .about-content{
+        .about-text{
+            padding-right: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                @include StyleText($color-pink-1,16px,600);
+            }
+            h2{
+              @include StyleText($color-black-2,57px,700);
+          }
+        }
     }
-    background-image: url(../../img/yellow_top_wave_01.png);
-    
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top right;
-    .About-item{
-        // background-image: url(../../img/);
-        padding: 60px 0;
+  .bg-bottom {
+    bottom: 0;
+    margin-top: 130px;
+    width: 100%;
     }
-
-    // margin-top: 55px;
+  .About-item {
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
 }

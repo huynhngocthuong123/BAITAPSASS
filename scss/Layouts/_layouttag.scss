@@ -1,32 +1,43 @@
-.layouttag{
-    .row{
-    }
-
-    .card {
-        overflow: hidden;
-        border: 0;
-        border-radius: 10px;
-        transition: all .5s
-        ;
-    
-        &:hover {
-    
-    
-            box-shadow: 2px 15px 25px 0px rgb(225, 215, 215);
-        }
-    
-        img {
-            border-radius: 10px 10px 0 0;
+.layouttag {
+    background-color: $color-bg-layoutag;
+    background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .row {
+        .card {
+           
+            overflow: hidden;
+            border: 0;
+            border-radius: 10px;
             transition: all .5s;
-            
-            &:hover{
-    transform: scale(1.05);
+            &:hover {
+                box-shadow: 2px 15px 25px 0px rgb(139, 138, 138);
             }
-    
-        }
-        .card-body{
-    
-            background-color: $color-white;
+            img {
+                border-radius: 10px 10px 0 0;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            .card-body {
+                text-align: center;
+                h1{
+                    @include StyleText($color-pink-1,11px,600);
+                }
+                h5{
+                    @include StyleText($color-black-2,23px,700);
+                }
+                p{
+                    @include StyleText($color-black-3,15px,400);
+                }
+
+            }
         }
     }
+    // .bg-bottom{
+    //     bottom: 0;
+    // }
+
 }
