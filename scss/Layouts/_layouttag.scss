@@ -1,27 +1,32 @@
-.card {
-    overflow: hidden;
-    border: 0;
-    border-radius: 10px;
-    transition: all .5s
-    ;
-
-    &:hover {
-
-
-        box-shadow: 2px 15px 25px 0px rgb(225, 215, 215);
+.layouttag{
+    .row{
     }
 
-    img {
-        border-radius: 10px 10px 0 0;
-        transition: all .5s;
-        
-        &:hover{
-transform: scale(1.05);
+    .card {
+        overflow: hidden;
+        border: 0;
+        border-radius: 10px;
+        transition: all .5s
+        ;
+    
+        &:hover {
+    
+    
+            box-shadow: 2px 15px 25px 0px rgb(225, 215, 215);
         }
-
-    }
-    .card-body{
-
-        background-color: $color-white;
+    
+        img {
+            border-radius: 10px 10px 0 0;
+            transition: all .5s;
+            
+            &:hover{
+    transform: scale(1.05);
+            }
+    
+        }
+        .card-body{
+    
+            background-color: $color-white;
+        }
     }
 }

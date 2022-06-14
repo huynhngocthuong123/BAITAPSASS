@@ -47,17 +47,11 @@ header .navbar .navbar-brand img {
   width: 80px;
 }
 
-header .navbar .collapse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .navbar .collapse .nav-item {
+header .navbar .navbar-collapse .nav-item {
   padding-right: 50px;
 }
 
-header .navbar .collapse .nav-item .nav-link {
+header .navbar .navbar-collapse .nav-item .nav-link {
   padding: 0;
   font-size: 13px;
   font-weight: 600;
@@ -66,7 +60,7 @@ header .navbar .collapse .nav-item .nav-link {
   line-height: 80px;
 }
 
-header .navbar .collapse .nav-item .nav-link::after {
+header .navbar .navbar-collapse .nav-item .nav-link::after {
   content: '';
   display: block;
   top: 0;
@@ -82,16 +76,16 @@ header .navbar .collapse .nav-item .nav-link::after {
   transition: all .5s;
 }
 
-header .navbar .collapse .nav-item .nav-link:hover {
+header .navbar .navbar-collapse .nav-item .nav-link:hover {
   color: #b61984;
 }
 
-header .navbar .collapse .nav-item .nav-link:hover::after {
+header .navbar .navbar-collapse .nav-item .nav-link:hover::after {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-header .navbar .collapse .active .nav-link::after {
+header .navbar .navbar-collapse .active .nav-link::after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -131,7 +125,7 @@ header .navbar .contact_header .contact_icon:hover {
   background-position: top right;
 }
 
-.About::after {
+.About::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -148,7 +142,7 @@ header .navbar .contact_header .contact_icon:hover {
   padding: 60px 0;
 }
 
-.card {
+.layouttag .card {
   overflow: hidden;
   border: 0;
   border-radius: 10px;
@@ -156,23 +150,23 @@ header .navbar .contact_header .contact_icon:hover {
   transition: all .5s;
 }
 
-.card:hover {
+.layouttag .card:hover {
   -webkit-box-shadow: 2px 15px 25px 0px #e1d7d7;
           box-shadow: 2px 15px 25px 0px #e1d7d7;
 }
 
-.card img {
+.layouttag .card img {
   border-radius: 10px 10px 0 0;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.card img:hover {
+.layouttag .card img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.card .card-body {
+.layouttag .card .card-body {
   background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
