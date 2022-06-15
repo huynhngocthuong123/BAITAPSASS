@@ -111,6 +111,13 @@ header .navbar .contact_header a {
   font-size: 13.5px;
   font-weight: 700;
   text-decoration: none;
+  border: 1px solid #b61984;
+}
+
+header .navbar .contact_header a:hover {
+  color: #b61984;
+  background-color: #fff;
+  border: 1px solid #b61984;
 }
 
 header .navbar .contact_header .contact_icon {
@@ -220,36 +227,120 @@ header .navbar .contact_header .contact_icon:hover {
   font-weight: 400;
 }
 
-.Port .port_send {
-  padding: 0 25px;
-  width: 345px;
+.Port {
+  padding-top: 60px;
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
 
-.Port .send_body select {
+.Port .port_img {
+  width: 527px;
+  margin-bottom: 45px;
+}
+
+.Port .port_send {
+  max-width: 100%;
+  padding: 0 25px;
+  margin-bottom: 45px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.Port .port_send h5 {
+  color: #191919;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 45px 0;
+}
+
+.Port .port_send .send_top {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.Port .port_send .send_top .icon-name,
+.Port .port_send .send_top .icon-email {
+  width: 100%;
+  position: relative;
+}
+
+.Port .port_send .send_top .icon-name input,
+.Port .port_send .send_top .icon-email input {
+  width: 100%;
+}
+
+.Port .port_send .send_top .icon-name {
+  padding-right: 15px;
+}
+
+.Port .port_send .send_top i {
+  position: absolute;
+}
+
+.Port .port_send .send_body .icon-select {
+  width: 100%;
+  position: relative;
+}
+
+.Port .port_send .send_body .icon-select select {
   border: 1px solid rgba(102, 97, 97, 0.315);
   border-radius: 44px;
   width: 100%;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
-.Port .send_body select:optional {
+.Port .port_send .send_body .icon-select select:optional {
   padding-left: 25px;
   font-size: 12px;
 }
 
-.Port .send_body select:focus {
+.Port .port_send .send_body .icon-select select:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 0.315);
 }
 
-.Port .send_body a {
-  text-decoration: none;
+.Port .port_send .send_body .icon-mes {
+  width: 100%;
+  position: relative;
+}
+
+.Port .port_send .send_body .icon-mes input {
+  width: 100%;
+}
+
+.Port .port_send .send_body .button-send {
+  text-align: center;
+  padding: 15px 50px;
+  background: #b61984;
+  color: #fff;
+  border-radius: 50px;
+  color: #fff;
   font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 44px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin-bottom: 20px;
+}
+
+.Port .port_send .send_body .button-send:hover {
+  background-color: #fff;
+  border: 1px solid #b61984;
+  color: #b61984;
 }
 
 .Port input {
-  font-size: 10px;
-  width: calc(100%/ 2 - 10px);
+  font-size: 12px;
   padding: 10px 10px 10px 30px;
   border: 1px solid rgba(102, 97, 97, 0.315);
   border-radius: 44px;
@@ -268,6 +359,7 @@ header .navbar .contact_header .contact_icon:hover {
 .Port textarea {
   width: 100%;
   padding: 10px;
+  margin-bottom: 45px;
   font-size: 12px;
   border: 1px solid rgba(102, 97, 97, 0.315);
   border-radius: 35px;
@@ -282,5 +374,121 @@ header .navbar .contact_header .contact_icon:hover {
 .Port textarea:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 0.315);
+}
+
+.Port span {
+  color: #b61984;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  line-height: 1rem;
+}
+
+footer {
+  background-image: url(../../img/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 400;
+  max-width: 100%;
+}
+
+footer .row {
+  padding: 120px 0;
+}
+
+footer .row .ft-item {
+  padding: 0 40px;
+}
+
+footer .row .news {
+  max-width: 100%;
+}
+
+footer .row .news .input-email input {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 44px;
+  background-color: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer .row .news .input-email input:focus {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+footer .row .news .input-email input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+footer .row .news .input-email input:-ms-input-placeholder {
+  color: #fff;
+}
+
+footer .row .news .input-email input::-ms-input-placeholder {
+  color: #fff;
+}
+
+footer .row .news .input-email input::placeholder {
+  color: #fff;
+}
+
+footer .row .news .sub input {
+  width: 100%;
+  text-align: center;
+  color: #191919;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 44px;
+  background-color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+footer .row .news .sub input:hover {
+  background-color: #b61984;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+footer .contact-body ul:first-child {
+  padding-top: 12px;
+}
+
+footer .contact-body li {
+  border: none;
+  padding: 5px 0;
+}
+
+footer .contact-bottom i:hover {
+  color: #000000;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 23.25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+footer ul li {
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
